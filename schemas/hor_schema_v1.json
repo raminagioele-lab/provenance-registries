@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HOR Record v1",
+  "type": "object",
+  "required": ["hor_id", "content_hash", "declared_origin", "declarant", "declaration_date", "declaration_scope"],
+  "properties": {
+    "hor_id": { "type": "string", "pattern": "^hor:1:sha256-[a-f0-9]{64}:[a-z0-9._-]+$" },
+    "content_hash": { "type": "string", "pattern": "^sha256-[a-f0-9]{64}$" },
+    "declared_origin": { "type": "string", "enum": ["HUMAN"] },
+    "declarant": { "type": "string", "minLength": 1 },
+    "declaration_date": { "type": "string", "format": "date-time" },
+    "declaration_scope": { "type": "string", "enum": ["text", "image", "audio", "video", "mixed"] },
+    "notes": { "type": "string" }
+  }
+}

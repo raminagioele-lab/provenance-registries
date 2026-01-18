@@ -1,0 +1,5 @@
+label_code,label_name,description,applicable_scope,compatibility,status
+HUMAN_ONLY,Human Only,Declared as fully human-created with no AI assistance.,content,tlr:core,active
+AI_GENERATED,AI Generated,Declared as generated primarily by an AI system.,content,tlr:core,active
+AI_ASSISTED,AI Assisted,Declared as human-created with AI assistance (editing/ideation).,content,tlr:core,active
+PROVENANCE_UNKNOWN,Provenance Unknown,Origin or provenance cannot be reliably declared.,content,tlr:core,active
